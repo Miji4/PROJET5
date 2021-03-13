@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ff615b761.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content= "Orinoco est un site e-commerce, qui vous propose un large choix de camera vintage." >
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <title>Orinoco, votre panier!</title>
+  </head>
+  <body>
+  
+    <!-- header -->
+  <header>
+    <div class="main_nav_container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a class="logo_container" href="index.html"><img src="images/logo.jpg" alt="logo oricono"/><h1 id="title">Orinoco</h1>
+            </a>
+            <nav class="navbar">
+              <ul class="navbar_user">
+                <li class="checkout">
+                <a href="panier.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span id="checkout_items" class="checkout_items"></span>
+                </a>
+                </li>
+                </ul>
+            </nav>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Selection -->
+
+
+<div id = "display"  class="row py-5 p-4 bg-white rounded shadow-sm">
+  <div class="col-lg-10 pb-5">
+    <div id="cart" class="table-responsive"></div>
+  </div>
+</div>  
+
+<section id="formulaire" >
+  <div class="row py-5 p-4 bg-white rounded shadow-sm">
+      <div class="col-lg-10">
+        <div class="bg-light rounded-pill px-4 py-3  font-weight-bold">
+            <h5>Formulaire de renseignement</h5>
+    
+            <form action="confirmation.html" method="POST" > 
+
+
+              <div id="formulaire__nom">
+                <label for='nom'>Nom</label>
+                <input type='text' placeholder="DUBOIS" name='nom' id='nom' maxlength='20'  pattern="/^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/" required>
+                <span id='missNom'></span><br>              
+              </div>   
+
+              <div id="formulaire__prenom">
+                <label for='prenom'>Prénom</label>
+                <input type='text' placeholder="Paul" name='prenom' id='prenom' maxlength='20' pattern="/^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/" required>
+                <span id='missPrenom'></span><br>              
+              </div>  
+
+              <div id="formulaire__email">
+                <label for='mail'>e-mail</label>
+                <input type='email' placeholder="paul.d@xxx.fr" name='mail' id='mail' pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required>
+                <span id='missEmail'></span>
+              </div>   
+
+              <div id="formulaire__ville">
+                <label for='ville'>Commune</label>
+                <input type='text' placeholder="Paris" name='ville' id='ville' pattern="/^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/" required> 
+                <span id='missVille'></span>
+              </div>   
+
+              <div id="formulaire__address">
+                <label for='address'>Adresse</label>
+                <input type='text' placeholder="2 place de la Mairie" name='address' id='address' pattern="/^\d+\s[A-z]+\s[A-z]+/" required> 
+                <span id='missAddress'></span>
+              </div>  
+            </form> 
+          </div>
+      </div>         
+  </div>
+
+  <div class="col-lg-10">
+    <div id="ordre" class="btn btn-dark rounded-pill py-2 btn-block">
+      <input id="ordre__validation" type='submit' value='Valider la commande'>
+    </div>
+  </div>
+
+</section>
+<!-- <section id="ordre">
+  <input id="ordre__validation" type='submit' value='Valider la commande' id='bouton_envoi'>
+
+</div>
+</section>
+ -->
+
+<!-- start footer -->
+<footer class="footer">
+ <div class="container">
+ <div class="row">
+   <div class="col-lg-6">
+     <div class="footer_social">
+     <ul>
+     <li><a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+     <li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+     <li><a href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+     <li><a href="https://skype.com"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+     <li><a href="https://pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+     </ul>
+     </div>
+   </div>
+
+ <div class="col-lg-6">
+ <div class="footer_nav_container">
+ <ul class="footer_nav">
+ <li><a href="mentionslegales.html">Mentions légales</a></li>
+ <li><a href="mailto:contact.Orinoco@example.com">Nous contacter</a></li>
+ </ul>
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/reusable_functions.js"></script>
+    <script src="js/panier.js"></script>
+  </body>
+</html>
