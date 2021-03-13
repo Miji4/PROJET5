@@ -1,0 +1,313 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+}
+
+.navbar {
+  width: auto;
+  height: 100px;
+  float: right;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.main_nav_container {
+  width: 100%;
+  background: #F3EAF1;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+.navbar_user {
+  margin-left: 37px;
+}
+
+.navbar_user li {
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar_user li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  color: #1e1e27;
+  transition: color 0.3s ease;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.navbar_user li a:hover {
+  color: #b5aec4;
+}
+
+.col-lg-12 {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #F3EAF1;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo_container {
+  text-decoration: none !important;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  color: #1e1e27;
+}
+
+.footer {
+  width: 100%;
+  background: #F3EAF1;
+  margin-top: 81px;
+}
+
+.footer_social {
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
+
+.footer_social ul li a {
+  color: #51545f;
+  transition: all 300ms ease;
+  padding: 10px;
+  list-style: none;
+}
+
+.footer_social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_nav_container ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_nav_container {
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
+
+.main_slider {
+  background-image: url(images/vcam_5.jpg);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.banner_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 265px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+  height: 210px;
+}
+
+.product_image img {
+  width: 100%;
+  margin-top: 40px;
+  transition: transform 0.2s;
+  /* Animation */
+  background-size: cover;
+}
+
+.product_image img:hover {
+  transform: scale(1.05);
+}
+
+.product_info {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product_info .product_price {
+  font-size: 14px;
+}
+
+.product_price {
+  font-weight: 900;
+}
+
+.product_name {
+  margin-top: 27px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.4em;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+#camera {
+  margin: 100px;
+}
+
+.img-fluid.rounded.shadow-sm:hover {
+  transform: scale(1.25);
+}
+
+.clear_continu {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.main {
+  border: 0;
+  border-bottom: 3px solid #eeeeee;
+  width: 100%;
+}
+
+.header {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.header h2 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  color: #333333;
+  margin: 0;
+}
+
+.txt {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+
+.Ncommande {
+  padding-top: 20px;
+}
+
+.Ncommande, table {
+  width: 100%;
+}
+
+.tdNcommande1, #orderId {
+  width: 50%;
+  background-color: #eeeeee;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  padding: 10px;
+}
+
+.tdNcommande2 {
+  width: 75%;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 15px 10px 5px 10px;
+}
+
+.totalCde {
+  width: 25%;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 15px 10px 5px 10px;
+}
+
+.tdtotalCde {
+  padding-top: 20px;
+}
+
+.tdtotalCde2 {
+  width: 75%;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  padding: 10px;
+  border-top: 3px solid #eeeeee;
+}
+
+.tdtotalCde .totalCde {
+  border-top: 3px solid #eeeeee;
+}
+
+.article-mentionslegales {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 130px;
+}
+
+.scrollToTop {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 500;
+}
+
+/*# sourceMappingURL=style.css.map */
