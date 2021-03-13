@@ -1,0 +1,96 @@
+.main {
+    border : 0;
+    border-bottom: 3px solid #eeeeee;
+    width : 100%;
+}
+
+.header {
+    font-family: Open Sans, Helvetica, Arial, sans-serif; 
+    text-align: center;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+
+    h2{
+        font-size: 30px; 
+        font-weight: 800; 
+        line-height: 36px; 
+        color: #333333; 
+        margin: 0;
+    }
+}
+
+
+.txt {
+    font-family: Open Sans, Helvetica, Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    padding-top: 10px;
+    text-align: center;
+}
+
+p{
+   font-size: 16px; 
+   font-weight: 400; 
+   line-height: 24px; 
+   color: #777777;
+}
+
+.Ncommande {
+    padding-top: 20px;
+}
+
+.Ncommande, table {
+    width : 100%
+}
+
+.tdNcommande1, #orderId {
+    width: 50%;
+    background-color: #eeeeee; 
+    font-family: Open Sans, Helvetica, Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: 800; 
+    line-height: 24px; 
+    padding: 10px;
+}
+
+.tdNcommande2 {
+    width: 75%;
+    font-family: Open Sans, Helvetica, Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    padding: 15px 10px 5px 10px;
+}
+
+.totalCde{
+    width:25%; 
+    font-family: Open Sans, Helvetica, Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    padding: 15px 10px 5px 10px;
+   
+}
+
+.tdtotalCde {
+    padding-top: 20px;
+}
+
+.tdtotalCde2 {
+    width: 75%; 
+    font-family: Open Sans, Helvetica, Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: 800; 
+    line-height: 24px; 
+    padding: 10px; 
+    border-top: 3px solid #eeeeee; 
+   
+}
+
+.tdtotalCde { 
+    .totalCde{
+    border-top: 3px solid #eeeeee; 
+    }
+}
