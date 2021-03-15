@@ -1,5 +1,5 @@
 // fetch url
-fetch ("http://localhost:3000/api/cameras/" + location.search.split('=')[1] )
+fetch ("http://localhost:3000/api/cameras/" + recoverId()) 
 .then (response=>response.json())
 .then(camera=>{
     viewCamera(camera);
@@ -10,12 +10,13 @@ fetch ("http://localhost:3000/api/cameras/" + location.search.split('=')[1] )
   });
 
   
-// function storeCamera(camera) { 
-//   window.selectedCamera = camera;
-// }
+ function recoverId() { // fonction qui recupère l 'ID de la camera
+   let Id = location.search.split('=')[1];
+   return Id;
+  }
 
 
-function getSelectedLens() { // fonction qui permet de selectionner la lentilles 
+function getSelectedLens() { // fonction qui permet de selectionner la lentille 
   return lens.value;
 }
 

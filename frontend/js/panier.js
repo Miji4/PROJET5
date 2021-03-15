@@ -1,6 +1,6 @@
 fetch ("http://localhost:3000/api/cameras/")
 .then (response=>response.json())
-.then(response=>{
+.then (response=>{
     showElement();
 })
 
@@ -16,7 +16,6 @@ let contact = {
     city:'',
     email:'',
 };
-
 
   
 // fonction qui permet de recuperer le dernier element du localstorage et regrouper les memes cameras
@@ -313,7 +312,7 @@ function form(){
 
 
     
-    // si formulaire valid création de l'objet à envoyer au serveur pour création de la commande 
+    // si formulaire valid création de l'objet à envoyer au serveur pour créer la commande 
 function validation(){
 
     form();
@@ -348,13 +347,12 @@ function validation(){
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(objectToSend) /* conversion en JSON des données requis par le serveur */
-    }).then(response => {
-            response.json().then(function(json) {
+        body: JSON.stringify(objectToSend) // conversion en JSON des données requis par le serveur 
+    }).then(response => { response.json().then(function(json) {
             let orderId = json.orderId;
-            document.location.href = 'confirmation.html?id=' + orderId;  /* envoi de l'ID de la commande dans l'url de la page de validation */
+            document.location.href = 'confirmation.html?id=' + orderId;  // envoi de l'ID de la commande dans l'url de la page de validation 
         });
-    }).catch(error => { /* enregistrement si erreur lors de l'envoi de données */
+    }).catch(error => { // enregistrement si erreur lors de l'envoi de données 
             alert(error);
     })  
 };
