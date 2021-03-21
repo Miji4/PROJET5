@@ -2,18 +2,17 @@
 fetch ("http://localhost:3000/api/cameras/" + recoverId()) 
 .then (response=>response.json())
 .then(camera=>{
-    viewCamera(camera);
+  viewCamera(camera);
 })
 
 .catch (function (err) {
-    console.log("error" + err);
-  });
+  console.log("error" + err);
+});
 
   
- function recoverId() { // fonction qui recupère l 'ID de la camera
-   let Id = location.search.split('=')[1];
-   return Id;
-  }
+function recoverId() { // fonction qui recupère l 'ID de la camera
+  return location.search.split('=')[1];
+}
 
 
 function getSelectedLens() { // fonction qui permet de selectionner la lentille 
@@ -86,14 +85,15 @@ function viewCamera(camera) {
 
       products.push({_id : camera._id, image : camera.imageUrl, name : camera.name, lenses : lens.value, price : camera.price/100 });
       localStorage.setItem('products', JSON.stringify(products));
-      localStorage.getItem('products');
       alert('Ajouté au panier !');
       window.location.reload();
+      
     } 
   };
 
 };
 
+// fonction qui affiche le nombre d'artcile dans le panier
 displayQty();
 
 

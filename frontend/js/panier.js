@@ -1,12 +1,4 @@
-fetch ("http://localhost:3000/api/cameras/")
-.then (response=>response.json())
-.then (response=>{
-    showElement();
-})
-
-.catch (function (err) {
-    console.log("error" + err);
-});
+showElement();
 
 // objet contact à envoyer au serveur
 let contact = {
@@ -20,7 +12,7 @@ let contact = {
   
 // fonction qui permet de recuperer le dernier element du localstorage et regrouper les memes cameras
 function addCart (){ 
-    showCart = [];
+    const showCart = [];
     for(let i = 0; i < products.length; i++) {  
         product = products[i];
         if(!showCart[product._id]) { 
@@ -82,7 +74,7 @@ function showElement(){
     table.appendChild(tbody);
 
     // je fais appel a ma fonction addCart() pour afficher les cameras dans mon panier
-    addCart ();
+    const showCart = addCart ();
 
     // creation de la variable entries pour pouvoir parcourir mon tableau showCart
     entries = Object.entries(showCart);
@@ -91,8 +83,12 @@ function showElement(){
     //fonction qui affiche le total
     function totalCart() {
         sum = 0;
-        for(let i = 0; i<entries.length; i++){var b = entries[i][1].length; for(let j=0; j<b; j++)
-        sum+= (entries[i][1][j].price)}				
+        for(let i = 0; i<entries.length; i++){
+            var b = entries[i][1].length; 
+            for(let j=0; j<b; j++){
+                sum+= (entries[i][1][j].price)
+            }
+        }				
         return sum;
     };
 
@@ -211,7 +207,7 @@ function showElement(){
         location.href = 'index.html';
     });
 
-    // function pour vider le panier 
+    // fonction pour vider le panier 
     function clearCart(){
         localStorage.clear();
         alert("Votre panier est maintenant vide !")
@@ -331,7 +327,9 @@ function validation(){
 
     // creation du tableau qui va contenir les id des cameras
     let productsId = [];
-    for(let i =0; i<products.length; i++){productsId.push(products[i]._id)}
+    for(let i =0; i<products.length; i++){
+        productsId.push(products[i]._id)
+    }
 
     // creation de l objet a envoyer
 
@@ -348,12 +346,15 @@ function validation(){
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(objectToSend) // conversion en JSON des données requis par le serveur 
-    }).then(response => { response.json().then(function(json) {
+    })
+    .then(response => { response.json()
+        .then(function(json) {
             let orderId = json.orderId;
             document.location.href = 'confirmation.html?id=' + orderId;  // envoi de l'ID de la commande dans l'url de la page de validation 
         });
-    }).catch(error => { // enregistrement si erreur lors de l'envoi de données 
-            alert(error);
+    })
+    .catch(error => { // enregistrement si erreur lors de l'envoi de données 
+         alert(error);
     })  
 };
 

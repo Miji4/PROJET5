@@ -5,9 +5,9 @@ function displayQty(){
     let quantityInCart = document.getElementById('checkout_items');
     if(products === null){
         quantityInCart.innerHTML = '0';
-        }else{
-            quantityInCart.innerHTML = products.length;
-         }    
+    }else{
+        quantityInCart.innerHTML = products.length;
+    }    
     return quantityInCart;
 }; 
 

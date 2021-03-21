@@ -6,8 +6,8 @@ fetch("http://localhost:3000/api/cameras")
   addElement(cameras);
 })
 .catch (function (err) {
-    console.log("error" + err);
-  });   
+  console.log("error" + err);
+});   
   
 
 
