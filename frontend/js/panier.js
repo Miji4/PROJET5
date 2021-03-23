@@ -11,7 +11,7 @@ let contact = {
 
   
 // fonction qui permet de recuperer le dernier element du localstorage et regrouper les memes cameras
-function addCart (){ 
+function addCart() { 
     const showCart = [];
     for(let i = 0; i < products.length; i++) {  
         product = products[i];
@@ -358,7 +358,7 @@ function validation(){
     })  
 };
 
-// fonction qui affiche le nombre d'artcile dans le panier
+// fonction qui affiche le nombre d'article dans le panier
 displayQty();
     
 

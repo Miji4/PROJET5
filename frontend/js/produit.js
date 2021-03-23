@@ -93,7 +93,7 @@ function viewCamera(camera) {
 
 };
 
-// fonction qui affiche le nombre d'artcile dans le panier
+// fonction qui affiche le nombre d'article dans le panier
 displayQty();
 
 
