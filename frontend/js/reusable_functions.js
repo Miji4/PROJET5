@@ -9,6 +9,7 @@ function displayQty(){
         quantityInCart.innerHTML = products.length;
     }    
     return quantityInCart;
+    
 }; 
 
 

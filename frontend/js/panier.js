@@ -183,23 +183,23 @@ function showElement(){
 
     let total = document.createElement('h5');
     total.className = "font-weight-bold";
-    total.innerHTML =totalCart() + " €" ;
+    total.innerHTML = totalCart() + " €" ; // affiche le total du panier
     li.appendChild(total);
 
     let div9 = document.createElement('div');
     div9.className = "clear_continu"
     div8.appendChild(div9)
 
-    let button1 = document.createElement('button');
+    let button1 = document.createElement('button'); 
     button1.id = "clear-cart";
     button1.innerHTML = "Vider mon panier";
-    button1.addEventListener("click", clearCart)
+    button1.addEventListener("click", clearCart) // écouteur d'evenement sur le boutton vider mon panier
 
     div9.appendChild(button1)
 
     let button2 = document.createElement('button');
     button2.id = "continu-shop";
-    button2.innerHTML = "Continuer mes achats";
+    button2.innerHTML = "Continuer mes achats"; 
 
     div9.appendChild(button2)
 
