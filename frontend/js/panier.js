@@ -74,7 +74,7 @@ function showElement(){
     table.appendChild(tbody);
 
     // je fais appel a ma fonction addCart() pour afficher les cameras dans mon panier
-    const showCart = addCart ();
+    const showCart = addCart();
 
     // creation de la variable entries pour pouvoir parcourir mon tableau showCart
     entries = Object.entries(showCart);
